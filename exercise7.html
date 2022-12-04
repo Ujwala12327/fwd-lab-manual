@@ -1,0 +1,45 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+ </head>
+ <body>
+ <h1>Arrays and Strings </h1>
+<p>1.add items to end of array</p>
+ <p id="demo"></p>
+<p>2.add items to starting of array</p>
+ <p id="demo1"></p>
+ <p>3.removes last item from array</p>
+ <p id="demo2"></p>
+ <p>4.removes first item from array</p>
+ <p id="demo3"></p>
+ <p>5.reverses order of items in an array</p>
+ <p id="demo4"></p>
+<p>6.sort the array</p>
+ <p id="demo5"></p>
+ <p>7.concat the array</p>
+ <p id="demo6"></p>
+ <script>
+ const people=["greg","mary","devon","james"]
+ const people1=["srivalli"]
+ people.push("Hema");
+ document.getElementById("demo").innerHTML=people;
+ people.unshift("madhu");
+ document.getElementById("demo1").innerHTML=people; people.pop();
+ 
+ document.getElementById("demo2").innerHTML=people;
+ people.shift();
+ document.getElementById("demo3").innerHTML=people;
+ people.reverse();
+ document.getElementById("demo4").innerHTML=people;
+ people.sort();
+ document.getElementById("demo5").innerHTML=people;
+ const people3=people.concat(people1);
+ document.getElementById("demo6").innerHTML=people3;
+ </script>
+ </body>
+ </html>
